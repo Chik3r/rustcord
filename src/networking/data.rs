@@ -663,3 +663,14 @@ pub enum Result {
     /// purchase flow aborted because the SDK is being torn down
     TransactionAborted = 43,
 }
+
+enum LogLevel {
+    /// Log only errors
+    Error = 1,
+    /// Log warnings and errors
+    Warning = 2,
+    /// Log info, warnings, and errors
+    Info = 3, 
+    /// Log all the things!   
+    Debug = 4,
+}
